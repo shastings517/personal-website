@@ -71,13 +71,15 @@ body{
 
 
 .title{
-  position: relative;
-  top: 300px;
+  position: absolute;
+  top: 45%;
   left: 750px;
+  /*margin-bottom: 5px;*/
 }
 
 #name{
   position: relative;
+  /*top:5px;*/
   left: 320px;
 }
 
@@ -88,4 +90,10 @@ body{
 #prjHeader{
   position: absolute;
   top: px;
+}
+
+.body{
+  position: relative;
+  top: 100px;
+  /*text-align: center;*/
 }
