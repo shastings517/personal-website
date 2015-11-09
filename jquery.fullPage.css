@@ -61,6 +61,7 @@ html.fp-enabled,
     position: relative;
 }
 .fp-controlArrow {
+    
     position: absolute;
     z-index: 4;
     top: 50%;
@@ -74,15 +75,16 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
+    color: black;
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent gray transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent gray;
 }
 .fp-scrollable {
     overflow: scroll;

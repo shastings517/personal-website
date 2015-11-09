@@ -16,6 +16,7 @@ $(function(){
 
   $('#fullpage').fullpage({
     verticalCentered: true,
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
   });
 
 
