@@ -1,0 +1,91 @@
+@font-face { font-family: manifesto; src: url('MANIFESTO.TTF'); }
+
+
+nav#nav{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(0,0,45,0.2);
+  border-color: gray;
+  transition: all 0.4s ease;
+}
+
+/*nav.sticky {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  background: #efc47D;
+  text-align: left;
+  padding-left: 20px;
+}
+*/
+
+body{
+  font-family: manifesto;
+}
+
+#cf, .headshot {
+  position:absolute;
+  top:0;
+  height:100%;
+  width:100%;
+  margin:0 auto;
+  z-index: 0;
+}
+
+#cf img {
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes FadeInOut {
+  0% {
+    opacity:1;
+  }
+  25% {
+    opacity:.75;
+  }
+  50% {
+    opacity:.50;
+  }
+  75% {
+    opacity:.25;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#cf img.top {
+  animation-name: FadeInOut;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+
+.title{
+  position: relative;
+  top: 300px;
+  left: 750px;
+}
+
+#name{
+  position: relative;
+  left: 320px;
+}
+
+.navbar-brand{
+  font-weight: 900;
+}
+
+#prjHeader{
+  position: absolute;
+  top: px;
+}
