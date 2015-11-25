@@ -22,7 +22,7 @@
   <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 
   <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-  <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>
+  <script src="jquery.easings.min.js"></script>
 
 
   <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
@@ -122,7 +122,7 @@
         <img class="top headshot" src="headshotfinal2.jpg">
         <div class="title">
           <h1 id="nomad"><strong>nomad</strong> media & design</h1>
-          <h5 id="name">Samuel Starbuck</h5>
+          <h5 id="name">Samuel Starbuck Hastings</h5>
         </div>
       </div>
     </div>
@@ -140,6 +140,13 @@
           <div class="row">
             <div class="col-xs-12">
               <h5 class='body text-center'>something</h5>
+              <audio id="audioElement" src="The Internet - Special Affair (Audio).mp3"></audio>
+              <div>
+                <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
+                <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
+                <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
+                <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+              </div>
             </div>
           </div>
         </div>
