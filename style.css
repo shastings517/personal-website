@@ -1,4 +1,4 @@
-@font-face { font-family: manifesto; src: url('MANIFESTO.TTF'); }
+@font-face { font-family: manifesto; src: url('./assets/MANIFESTO.TTF'); }
 
 
 nav#nav{
