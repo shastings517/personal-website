@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <title>Samuel Starbuck</title>
   <script src="./assets/jquery.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="./assets/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
   <!-- Optional theme -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
   
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
   <script src="./assets/bootstrap.js"></script>
 
   <!-- jquery full-page  -->
@@ -50,15 +51,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" data-menuanchor="firstPage" href="#firstPage"><strong>Nomad</strong></a>
+        <a class="navbar-brand" data-menuanchor="firstPage" href="#firstPage"><strong>Home</strong></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav" id="menu">
-          <li class="navLinks" id="projects" data-menuanchor="secondPage"><a href="#secondPage">Projects</a></li>
-          <li class="navLinks" id="blog" data-menuanchor="thirdPage"><a href="#thirdPage">Blog</a></li>
-          <li class="navLinks" id="contact" data-menuanchor="fourthPage"><a href="#fourthPage">Contact</a></li>
+          <li class="navLinks" id="about" data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+          <li class="navLinks" id="skills" data-menuanchor="thirdPage"><a href="#thirdPage">Skills</a></li>
+          <li class="navLinks" id="projects" data-menuanchor="fourthPage"><a href="#fourthPage">Projects</a></li>
+          <li class="navLinks" id="contact" data-menuanchor="fifthPage"><a href="#fifthPage">Contact</a></li>
+          <li class="navLinks" id="blog" data-menuanchor="sixthPage"><a href="#sixthPage">Blog</a></li>
 
 
           <!-- <li class="dropdown">
@@ -124,31 +127,132 @@
         <img class="bottom headshot" src="./assets/headshotfinal.jpg">
         <img class="top headshot" src="./assets/headshotfinal2.jpg">
         <div class="title">
-          <h1 id="nomad"><strong>nomad</strong> media & design</h1>
-          <h5 id="name">Samuel Starbuck Hastings</h5>
+          <h1 id="nomad"><strong>Samuel</strong>Starbuck Hastings</h1>
+          <h5 id="name">Web Developer</h5>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT -->
+    <div class="section" id="section2">
+      <div class="container">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-xs-12"> -->
+            <h1 class='body text-center' id="about">About</h1>
+            <h3 class="text-center" id="bio">I am a full stack web developer. You look like a half stack. I originally hail from the mean streets of Amherst, MA. I have a diverse background and many interests but I have settled on web development as my primary source of income. My main goal in life is self-betterment and I believe that comfort and stability are the enemy. I strive for constant movement and growth. I am really good at opening jars. Also I speak Japanese fluently. I regularly partake in the long lost art of reading books.</h3>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- SKILLS -->
+    <div class="section " id="section3">
+      <div id="" class="container">
+        <div class="row">
+          <!-- <div class="col-xs-12"> -->
+            <h1 class='body text-center' id="skills">Skills</h1>
+              <div class="col-xs-12">
+                <svg class="chart" data-bar-chart data-data="23,43,10,13,10,20,30,23,43,10,13,10,24,50,12" data-bar-width="68">
+                  <!-- <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    </linearGradient>
+                  </defs> -->
+                </svg>
+
+              </div>
+            <!-- <div class="row"> -->
+              <div class="col-xs-12 allLogos">
+                <img class="logo img-responsive center-block row1" src="./assets/logos/angular.jpg" alt="">
+                <img class="logo img-responsive center-block row2" src="./assets/logos/css.png" alt="">
+                <img class="logo img-responsive center-block row3" src="./assets/logos/expressjs.png" alt="">
+              
+                <img class="logo img-responsive center-block" id="mongodb" src="./assets/logos/mongoDB-logo.png" alt="">
+                <img class="logo img-responsive center-block row2" src="./assets/logos/html5.png" alt="">
+                <img class="logo img-responsive center-block row3" src="./assets/logos/js.png" alt="">
+              
+                <img class="logo img-responsive center-block" id="mongoose" src="./assets/logos/mongoose.png" alt="">
+                <img class="logo img-responsive center-block row2" src="./assets/logos/nodejs.png" alt="">
+                <img class="logo img-responsive center-block row3" src="./assets/logos/photoshop.jpg" alt="">
+              
+                <img class="logo img-responsive center-block row1" src="./assets/logos/postgresql.png" alt="">
+                <img class="logo img-responsive center-block row2" src="./assets/logos/rails.png" alt="">
+                <img class="logo img-responsive center-block row3" src="./assets/logos/ruby.png" alt="">
+                
+                <img class="logo img-responsive center-block row3" src="./assets/logos/d3.png" alt="">
+                <img class="logo img-responsive center-block row3" src="./assets/logos/jquery.gif" alt="">
+                <img class="logo img-responsive center-block row3" src="./assets/logos/jquerymobile.png" id="jquerymobile"alt="">
+              </div>
+          <!-- </div>  -->
+          <!-- <div class="col-xs-6">
+            <h1 class='body text-center'>Skills</h1>
+          </div> -->
+         <!--  <div>
+          </div> -->
+
+            <img class="bottom background" src="./assets/background2.jpg">
+            <img class="top background" src="./assets/background5.jpg">
+          <!-- </div -->
+            <!-- </div> -->
         </div>
       </div>
     </div>
 
+      
     <!-- PROJECTS -->
-    <div class="section" id="section2">
-      <div id="cf">
-        <img class="bottom background" src="./assets/background2.jpg">
-        <img class="top background" src="./assets/background5.jpg">
-        <h1 class='body text-center'>projects</h1>
-      </div>
-
+    <div class="section" id="section4">
       <div class="slide" data-anchor="slide1">
-        <div class="container-fluid">
+        <div class="container">
+          <h1 class='body text-center' id="project">Projects</h1>
           <div class="row">
-            <div class="col-xs-12">
-              <h5 class='body text-center'>something</h5>
-              <audio id="audioElement" src="The Internet - Special Affair (Audio).mp3"></audio>
-              <div>
-                <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
-                <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
-                <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
-                <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Tic Tac Toe</h2>
+                <a href="#fourthPage/slide2"><img src="./assets/projects/tictactoe.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Memory</h2>
+                <a href="#fourthPage/slide3"><img src="./assets/projects/memory.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Superheros</h2>
+                <a href="#fourthPage/slide4"><img src="./assets/projects/superhero.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">BayDay</h2>
+                <a href="#fourthPage/slide5"><img src="./assets/projects/bayday.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Pixel Art</h2>
+                <a href="#fourthPage/slide6"><img src="./assets/projects/pixelart.png" alt="" class="projectImg"></a>
+              </div>  
+            </div>
+          
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">ChordRep</h2>
+                <a href="#fourthPage/slide7"><img src="./assets/projects/chordrep.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Daily Diary</h2>
+                <a href="#fourthPage/slide8"><img src="./assets/projects/dailydiary.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Reddit Clone</h2>
+                <a href="#fourthPage/slide9"><img src="./assets/projects/redditclone.png" alt="" class="projectImg"></a>
               </div>
             </div>
           </div>
@@ -158,33 +262,108 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='body text-center'>something else</h5>
+              <div class="text-center">
+                <h3>Tic Tac Toe</h3>
+                <div class="col-xs-8">
+                  <img src="./assets/projects/tictactoe.png" alt="" class="projectDetail">
+                </div> 
+                <div class="col-xs-4">
+                  <h3>description</h3>
+                </div> 
+
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="slide" data-anchor="slide3">
-      <div class="container-fluid">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='body text-center'>something else else</h5>
+              <h5 class='text-center'>Memory</h5>
+              <img src="./assets/projects/memory.png" alt="" class="projectDetail">
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h5 class='text-center'>Superheros</h5>
+              <img src="./assets/projects/superhero.png" alt="" class="projectDetail">
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h5 class='text-center'>Bay Day</h5>
+              <img src="./assets/projects/bayday.png" alt="" class="projectDetail">
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide6">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h5 class='text-center'>Pixel Art</h5>
+              <img src="./assets/projects/pixelart.png" alt="" class="projectDetail">
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide7">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h5 class='text-center'>ChordRep</h5>
+              <img src="./assets/projects/chordrep.png" alt="" class="projectDetail">
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide8">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h5 class='text-center'>Daily Diary</h5>
+              <img src="./assets/projects/dailydiary.png" alt="" class="projectDetail">
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide9">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h5 class='text-center'>Reddit Clone</h5>
+              <img src="./assets/projects/redditclone.png" alt="" class="projectDetail">
+
+              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- BLOG -->
-    <div class="section" id="section3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <h1 class='body text-center'>Blog</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- CONTACT -->
-    <div class="section" id="section4">
+    <div class="section" id="section5">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
@@ -193,10 +372,30 @@
         </div>
       </div>
     </div>
+    <!-- blog -->
+    <div class="section" id="section6">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class='body text-center'>blog</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section" id="section7">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class='body text-center'>contact</h1>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </div>
 
   
 
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
