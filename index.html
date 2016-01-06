@@ -6,8 +6,9 @@
   <script src="./assets/jquery.js"></script>
   <link rel="stylesheet" href="./assets/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
   <!-- Optional theme -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
   
@@ -46,22 +47,22 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+          <!-- <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> -->
         </button>
-        <a class="navbar-brand" data-menuanchor="firstPage" href="#firstPage"><strong>Home</strong></a>
+        <a class="navbar-brand" data-menuanchor="firstPage" href="#firstPage" id="home"><strong>Home</strong></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav" id="menu">
-          <li class="navLinks" id="about" data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
-          <li class="navLinks" id="skills" data-menuanchor="thirdPage"><a href="#thirdPage">Skills</a></li>
-          <li class="navLinks" id="projects" data-menuanchor="fourthPage"><a href="#fourthPage">Projects</a></li>
-          <li class="navLinks" id="contact" data-menuanchor="fifthPage"><a href="#fifthPage">Contact</a></li>
-          <li class="navLinks" id="blog" data-menuanchor="sixthPage"><a href="#sixthPage">Blog</a></li>
+        <ul class="nav nav-justified" id="menu">
+          <li class="navLinks" data-menuanchor="secondPage"><a id="about" href="#secondPage">About</a></li>
+          <li class="navLinks" data-menuanchor="thirdPage"><a id="skills" href="#thirdPage">Skills</a></li>
+          <li class="navLinks" data-menuanchor="fourthPage"><a id="projects" href="#fourthPage">Projects</a></li>
+          <li class="navLinks" data-menuanchor="fifthPage"><a id="contact" href="#fifthPage">Contact</a></li>
+          <li class="navLinks" data-menuanchor="sixthPage"><a id="blog" href="#sixthPage">Blog</a></li>
 
 
           <!-- <li class="dropdown">
@@ -127,7 +128,7 @@
         <img class="bottom headshot" src="./assets/headshotfinal.jpg">
         <img class="top headshot" src="./assets/headshotfinal2.jpg">
         <div class="title">
-          <h1 id="nomad"><strong>Samuel</strong>Starbuck Hastings</h1>
+          <h1 id="nomad"><strong>Samuel</strong> Starbuck Hastings</h1>
           <h5 id="name">Web Developer</h5>
         </div>
       </div>
@@ -137,8 +138,8 @@
       <div class="container">
         <!-- <div class="row"> -->
           <!-- <div class="col-xs-12"> -->
-            <h1 class='body text-center' id="about">About</h1>
-            <h3 class="text-center" id="bio">I am a full stack web developer. You look like a half stack. I originally hail from the mean streets of Amherst, MA. I have a diverse background and many interests but I have settled on web development as my primary source of income. My main goal in life is self-betterment and I believe that comfort and stability are the enemy. I strive for constant movement and growth. I am really good at opening jars. Also I speak Japanese fluently. I regularly partake in the long lost art of reading books.</h3>
+            <!-- <h1 class='body text-center' id="aboutHeader">About</h1> -->
+            <h3 class="text-center" id="bio" class="fullBio">Greetings, my name is Samuel. I like to build. Whether it be with my hands or my trusty laptop, I try to be constantly producing. I am a focused and self-motivated individual who values learning and growth. I have a diverse career background that includes carpentry, teaching, translation/interpretation (Japanese - English/English - Japanese), project management, and most recently software/web development (I have experience with a range of technologies but I am most comfortable with the MEAN stack). Currently pursuing employment as a software developer in the Bay Area, I am hoping to find an environment where I can sharpen my current skill set and learn while surrounded by unique and forward looking people. When I am not coding, I am making music, practicing Japanese, or exercising.</h3>
           <!-- </div> -->
         <!-- </div> -->
       </div>
@@ -148,9 +149,9 @@
       <div id="" class="container">
         <div class="row">
           <!-- <div class="col-xs-12"> -->
-            <h1 class='body text-center' id="skills">Skills</h1>
+            <h1 class='body text-center' id="skillsHeader">Skills</h1>
               <div class="col-xs-12">
-                <svg class="chart" data-bar-chart data-data="23,43,10,13,10,20,30,23,43,10,13,10,24,50,12" data-bar-width="68">
+                <svg class="chart" data-bar-chart data-data="37,43,30,23,50,49,30,23,13,11,13,10,18,35,12" data-bar-width="68">
                   <!-- <defs>
                     <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
@@ -201,58 +202,57 @@
     <!-- PROJECTS -->
     <div class="section" id="section4">
       <div class="slide" data-anchor="slide1">
-        <div class="container">
-          <h1 class='body text-center' id="project">Projects</h1>
+        <div class="container projContainer">
+          <!-- <h1 class='body text-center' id="projectsHeader">Projects</h1> -->
           <div class="row">
             <div class="col-xs-3">
               <div class="text-center">
-                <h2 class="projHead">Tic Tac Toe</h2>
-                <a href="#fourthPage/slide2"><img src="./assets/projects/tictactoe.png" alt="" class="projectImg"></a>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="text-center">
-                <h2 class="projHead">Memory</h2>
-                <a href="#fourthPage/slide3"><img src="./assets/projects/memory.png" alt="" class="projectImg"></a>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <div class="text-center">
-                <h2 class="projHead">Superheros</h2>
-                <a href="#fourthPage/slide4"><img src="./assets/projects/superhero.png" alt="" class="projectImg"></a>
+                <h2 class="projHead">ChordRep</h2>
+                <a href="#fourthPage/slide2"><img src="./assets/projects/chordrep.png" alt="" class="projectImg"></a>
               </div>
             </div>
             <div class="col-xs-3">
               <div class="text-center">
                 <h2 class="projHead">BayDay</h2>
-                <a href="#fourthPage/slide5"><img src="./assets/projects/bayday.png" alt="" class="projectImg"></a>
+                <a href="#fourthPage/slide3"><img src="./assets/projects/bayday.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Daily Diary</h2>
+                <a href="#fourthPage/slide4"><img src="./assets/projects/dailydiary.png" alt="" class="projectImg"></a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="text-center">
+                <h2 class="projHead">Superheros</h2>
+                <a href="#fourthPage/slide5"><img src="./assets/projects/superhero.png" alt="" class="projectImg"></a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-3">
               <div class="text-center">
-                <h2 class="projHead">Pixel Art</h2>
-                <a href="#fourthPage/slide6"><img src="./assets/projects/pixelart.png" alt="" class="projectImg"></a>
+                <h2 class="projHead">Reddit Clone</h2>
+                <a href="#fourthPage/slide6"><img src="./assets/projects/redditclone.png" alt="" class="projectImg"></a>
               </div>  
             </div>
-          
             <div class="col-xs-3">
               <div class="text-center">
-                <h2 class="projHead">ChordRep</h2>
-                <a href="#fourthPage/slide7"><img src="./assets/projects/chordrep.png" alt="" class="projectImg"></a>
+                <h2 class="projHead">Tic Tac Toe</h2>
+                <a href="#fourthPage/slide7"><img src="./assets/projects/tictactoe.png" alt="" class="projectImg"></a>
               </div>
             </div>
             <div class="col-xs-3">
               <div class="text-center">
-                <h2 class="projHead">Daily Diary</h2>
-                <a href="#fourthPage/slide8"><img src="./assets/projects/dailydiary.png" alt="" class="projectImg"></a>
+                <h2 class="projHead">Memory</h2>
+                <a href="#fourthPage/slide8"><img src="./assets/projects/memory.png" alt="" class="projectImg"></a>
               </div>
             </div>
             <div class="col-xs-3">
               <div class="text-center">
-                <h2 class="projHead">Reddit Clone</h2>
-                <a href="#fourthPage/slide9"><img src="./assets/projects/redditclone.png" alt="" class="projectImg"></a>
+                <h2 class="projHead">Pixel Art</h2>
+                <a href="#fourthPage/slide9"><img src="./assets/projects/pixelart.png" alt="" class="projectImg"></a>
               </div>
             </div>
           </div>
@@ -262,15 +262,23 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <div class="text-center">
-                <h3>Tic Tac Toe</h3>
-                <div class="col-xs-8">
-                  <img src="./assets/projects/tictactoe.png" alt="" class="projectDetail">
-                </div> 
-                <div class="col-xs-4">
-                  <h3>description</h3>
-                </div> 
-
+              <div class="text-center projDiv">
+                <h3>ChordRep</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/chordrep.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">A static web app used to practice guitar chords efficiently. Built in HTML5, CSS3, JavaScript, and jQuery. </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/chordRep"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
               </div>
             </div>
@@ -281,9 +289,31 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>Memory</h5>
-              <img src="./assets/projects/memory.png" alt="" class="projectDetail">
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              <div class="text-center projDiv">
+                <h3>Bay Day</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/bayday.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          Bay Day is a Ruby-on-Rails project that utilizes the bandsintown API along with user-defined shows to expose a verbose, live music and events database specific to the San Francisco Bay Area. Users are able to attend shows and see which shows other users are attending from present day to 3 days in the future.<br>
+
+                          This project was built to demonstrate comprehension of Ruby, Ruby-On-Rails, PostgreSQL (creating many-to-many associations), RSpec, JavaScript and jQuery mobile for responsiveness. <br>
+
+                          Built in a week by Mark Marsella, Samuel Hastings and Donte´ Burney.
+                        </h5>
+                        <a target="_blank" class="liveLink" href="https://vast-beyond-3900.herokuapp.com/">live link</a>
+                        <a target="_blank" href="https://github.com/digitalartcrew/bay_area_show_project"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -292,10 +322,27 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>Superheros</h5>
-              <img src="./assets/projects/superhero.png" alt="" class="projectDetail">
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
-
+              <div class="text-center projDiv">
+                <h3>Daily Diary</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/dailydiary.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          A web app that allows users to track their physical and mental health daily. User entries are analyzed using a unique scoring system and IBM's AlchemyAPI text sentiment analysis. I built this app after building my hundredth useless CRUD app (lets create, read, update, and delete some puppies). I wanted to build something that had CRUD functionality but was useful to the user. That being said, this app needs a stylistic facelift. I would like to expand this app and include user data visualization through the D3 js framework.
+                        </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/awesomeproject2"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -304,10 +351,31 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>Bay Day</h5>
-              <img src="./assets/projects/bayday.png" alt="" class="projectDetail">
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
-
+              <div class="text-center projDiv">
+                <h3>Superheros</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/superhero.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          This app is the first full app that I built using Ruby and Rails. This app integrates user accounts and user authentication to limit what a user can do (admins have more access than non-admins). This app uses postgreSQL for the database and utlizes RESTful routing on the back end. Users can create an account and once logged in can create teams of superheros. This was the first project in which the database schema became a little more complicated. I used the following models to store data in the database: <br> User => username, password, password_digest, is_admin <br>
+                          Team => name, description <br>
+                          Superhero => name, height, bio, image_url <br>
+                          The user to teams relationship is one-to-many, while the teams to superheros relationship is many-to-many.
+                        </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/rails-titanic-teams"><i class="fa fa-github-square smallGitLogo"></i></a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -316,10 +384,27 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>Pixel Art</h5>
-              <img src="./assets/projects/pixelart.png" alt="" class="projectDetail">
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
-
+              <div class="text-center projDiv">
+                <h3>Reddit Clone</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/redditclone.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          This was the first app that I built using angular. It is essentially a single page app reddit clone without a database. Users can add posts and also add comments to posts. 
+                        </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/reddit-clone"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -328,10 +413,27 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>ChordRep</h5>
-              <img src="./assets/projects/chordrep.png" alt="" class="projectDetail">
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
-
+              <div class="text-center projDiv">
+                <h3>Tic Tac Toe</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/tictactoe.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          A simple tic-tac-toe game built in HTML5, CSS3, and JavaScript. I had some fun using gradients while styling the app.
+                        </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/tic-tac-toe"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -340,9 +442,27 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>Daily Diary</h5>
-              <img src="./assets/projects/dailydiary.png" alt="" class="projectDetail">
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              <div class="text-center projDiv">
+                <h3>Memory</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/memory.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          A simple memory game built using HTML5, CSS3, and JavaScript.
+                        </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/memory-game-lab"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -351,11 +471,27 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h5 class='text-center'>Reddit Clone</h5>
-              <img src="./assets/projects/redditclone.png" alt="" class="projectDetail">
-
-              <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
-
+              <div class="text-center projDiv">
+                <h3>Pixel Art</h3>
+                <div id="f1_container">
+                  <div id="f1_card" class="shadow">
+                    <div class="front face">
+                      <img src="./assets/projects/pixelart.png" alt="" class="projectDetail">
+                    </div>
+                    <div class="back face center">
+                      <h3>Details</h3>
+                      <div>
+                        <h5 class="projectInfoText">
+                          A simple static web app pixel art maker. This app was built using HTML5 and JavaScript.
+                        </h5>
+                        <a target="_blank" class="liveLink" href="">live link</a>
+                        <a target="_blank" href="https://github.com/shastings517/pixel-art-maker"><i class="fa fa-github-square smallGitLogo"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#fourthPage/slide1"><h3>All Projects</h3></a>
+              </div>
             </div>
           </div>
         </div>
@@ -367,7 +503,27 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
-            <h1 class='body text-center'>contact</h1>
+            <h1 class='body text-center' id="contactHeader"> </h1>
+            <div class="col-xs-6 contactLogo">
+              <!-- <div class="col-xs-4"> -->
+                <div class="wrapper">
+                  <a href="mailto:shastings517@gmail.com"><i id="gmail" class="fa fa-envelope-square"><span class="contactInfo">&nbsp shastings517@gmail.com</span></i></a><br>
+                  <!-- <i id="fbook" class="fa fa-facebook-official"></i><br> -->
+                  <a target="_blank" href="https://www.linkedin.com/in/samuelhastings"><i id="linkedin" class="fa fa-linkedin-square"><span class="contactInfo">&nbsp www.linkedin.com/in/samuelhastings</span></i></a><br>
+                  <a target="_blank" href="https://github.com/shastings517"><i id="github" class="fa fa-github-square"><span class="contactInfo">&nbsp github.com/shastings517</span></i></a><br>
+                  
+                </div>
+              <!-- </div> -->
+              <!-- <div class="col-xs-8">
+                <h5 id="slide">shastings517@gmail.com</h5>
+                <h5 id="slide">shastings517@gmail.com</h5>
+                <h5 id="slide">shastings517@gmail.com</h5>
+                <h5 id="slide">shastings517@gmail.com</h5>
+              </div> -->
+            </div>
+            <div class="col-xs-6">
+              <div class="" id="map"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -376,8 +532,9 @@
     <div class="section" id="section6">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12">
-            <h1 class='body text-center'>blog</h1>
+          <div class="col-xs-12 text-center">
+            <!-- <h1 class='body text-center' id="blogHeader">blog</h1> -->
+            <a id="blogFont" class="body text-center" target="_blank" href="https://samuelstarbuck.wordpress.com/"><i class="fa fa-wordpress">&nbsp blog</i></a>
           </div>
         </div>
       </div>
@@ -394,7 +551,7 @@
   </div>
 
   
-
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="app.js"></script>
 </body>
